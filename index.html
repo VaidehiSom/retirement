@@ -66,13 +66,13 @@ section:after{color:var(--pink)}
 html,body{width:100%;max-width:100%;overflow-x:hidden}
 main,section,.topbar,.footer{max-width:100vw}
 @media(max-width:760px){
-  html,body{width:100vw;max-width:100vw;min-width:0;overflow-x:hidden}
-  main,section,.topbar,.footer,.wrap{width:100%;max-width:100%;min-width:0}
+  html,body{width:100vw!important;max-width:100vw!important;min-width:100vw!important;overflow-x:hidden}
+  main,section,.topbar,.footer{width:100vw!important;max-width:100vw!important;min-width:0}
   .wrap{padding-left:16px;padding-right:16px}
   .botanical-layer{width:100vw;max-width:100vw;right:0;left:0;opacity:.2;background-size:760px auto;background-position:center top}
-  .letter-full{position:fixed;left:0;right:0;top:0;bottom:0;width:100vw;max-width:100vw;padding:10px;display:none}
-  .letter-full.open{display:flex}
-  .letter-paper{box-sizing:border-box;width:100%;min-width:0;max-width:100%;max-height:calc(100dvh - 20px);padding:52px 18px 26px;overflow-x:hidden;overflow-y:auto}
+  .letter-full{position:fixed;left:0!important;right:0!important;top:0!important;bottom:0!important;width:100vw!important;max-width:100vw!important;padding:10px;display:none;align-items:flex-start!important;justify-content:center;overflow:hidden}
+  .letter-full.open{display:flex;align-items:flex-start!important}
+  .letter-paper{box-sizing:border-box;width:100%!important;min-width:0;max-width:100%!important;max-height:calc(100dvh - 20px);margin:0!important;padding:52px 18px 26px;overflow-x:hidden;overflow-y:auto}
   .letter-body{width:100%;min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:normal}
   .wrap{width:calc(100% - 32px);max-width:calc(100% - 32px);margin-left:auto;margin-right:auto}
   section{width:100%;overflow:hidden}
